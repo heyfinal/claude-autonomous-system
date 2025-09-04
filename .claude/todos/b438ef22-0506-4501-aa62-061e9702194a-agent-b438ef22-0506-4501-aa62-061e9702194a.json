@@ -1,0 +1,30 @@
+[
+  {
+    "content": "Review NeuralSync v3 codebase structure and components",
+    "status": "completed"
+  },
+  {
+    "content": "Analyze enhanced server implementation and legacy routes",
+    "status": "in_progress"
+  },
+  {
+    "content": "Review storage layer with SQLite concurrency improvements",
+    "status": "pending"
+  },
+  {
+    "content": "Examine research deduplication with optional dependencies",
+    "status": "pending"
+  },
+  {
+    "content": "Review wrapper scripts and self-repair mechanisms",
+    "status": "pending"
+  },
+  {
+    "content": "Analyze installer/uninstaller implementation",
+    "status": "pending"
+  },
+  {
+    "content": "Launch meta-agent-architect for comprehensive analysis",
+    "status": "pending"
+  }
+]

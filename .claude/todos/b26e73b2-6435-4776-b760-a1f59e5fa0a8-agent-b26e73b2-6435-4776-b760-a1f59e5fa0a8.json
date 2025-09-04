@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Make system 100% autonomous - no manual commands needed",
+    "status": "completed"
+  },
+  {
+    "content": "Fix startup script reliability issues",
+    "status": "completed"
+  },
+  {
+    "content": "Create GitHub Actions automation",
+    "status": "completed"
+  },
+  {
+    "content": "Build mobile control app",
+    "status": "completed"
+  },
+  {
+    "content": "Create GitHub repo for everything",
+    "status": "in_progress"
+  },
+  {
+    "content": "Implement AI code analysis",
+    "status": "pending"
+  }
+]

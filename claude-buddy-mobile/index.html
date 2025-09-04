@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Buddy Mobile</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Claude Buddy">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMDA3YWZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xMiAyYTEwIDEwIDAgMSAxIC0xMCAxMCAxMCAxMCAwIDAgMSAxMCAtMTB6bTAgMThhOCA4IDAgMSAwIC04IC04IDggOCAwIDAgMCA4IDh6Ii8+PC9zdmc+">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .status.online {
+            background: rgba(0, 255, 0, 0.3);
+        }
+
+        .status.offline {
+            background: rgba(255, 0, 0, 0.3);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover, .button:active {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .button.primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .button.danger {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .log {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 15px;
+            height: 200px;
+            overflow-y: auto;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            opacity: 0.9;
+        }
+
+        .log-entry.error {
+            color: #ff6b6b;
+        }
+
+        .log-entry.success {
+            color: #51cf66;
+        }
+
+        .input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Claude Buddy</h1>
+            <div class="status" id="status">Connecting...</div>
+        </div>
+
+        <div class="card">
+            <h3>System Status</h3>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value" id="serverStatus">●</div>
+                    <div class="stat-label">WebSocket Server</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="clientCount">-</div>
+                    <div class="stat-label">Connected Clients</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="mcpStatus">-</div>
+                    <div class="stat-label">MCP Servers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="uptime">-</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Quick Actions</h3>
+            <button class="button primary" onclick="sendCommand('restart')">🔄 Restart System</button>
+            <button class="button" onclick="sendCommand('health-check')">🏥 Health Check</button>
+            <button class="button" onclick="sendCommand('update')">⬆️ Update All</button>
+            <button class="button" onclick="refreshStatus()">📊 Refresh Status</button>
+        </div>
+
+        <div class="card">
+            <h3>Send Message</h3>
+            <input type="text" class="input" id="messageInput" placeholder="Enter message..." onkeypress="handleEnter(event)">
+            <button class="button" onclick="sendMessage()">📤 Send Broadcast</button>
+        </div>
+
+        <div class="card">
+            <h3>Activity Log</h3>
+            <div class="log" id="activityLog">
+                <div class="log-entry">Connecting to Claude Buddy...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let ws = null;
+        let isConnected = false;
+        let reconnectTimeout = null;
+
+        // Auto-detect server URL
+        const getServerUrl = () => {
+            // Try common ports
+            const ports = [8080, 8081, 8082, 8083];
+            const host = window.location.hostname || 'localhost';
+            return `ws://${host}:8080`; // Start with default
+        };
+
+        function connect() {
+            const serverUrl = getServerUrl();
+            addLog(`Connecting to ${serverUrl}...`);
+            
+            ws = new WebSocket(serverUrl);
+            
+            ws.onopen = () => {
+                isConnected = true;
+                updateStatus('online');
+                addLog('Connected to Claude Buddy!', 'success');
+                
+                // Set client name
+                ws.send(JSON.stringify({
+                    type: 'set_name',
+                    name: 'Mobile-' + Date.now()
+                }));
+                
+                // Request status updates
+                refreshStatus();
+                
+                // Clear reconnect timeout
+                if (reconnectTimeout) {
+                    clearTimeout(reconnectTimeout);
+                    reconnectTimeout = null;
+                }
+            };
+            
+            ws.onmessage = (event) => {
+                try {
+                    const message = JSON.parse(event.data);
+                    handleMessage(message);
+                } catch (error) {
+                    addLog(`Invalid message: ${error.message}`, 'error');
+                }
+            };
+            
+            ws.onclose = () => {
+                isConnected = false;
+                updateStatus('offline');
+                addLog('Connection lost. Attempting to reconnect...', 'error');
+                
+                // Auto-reconnect
+                if (!reconnectTimeout) {
+                    reconnectTimeout = setTimeout(connect, 5000);
+                }
+            };
+            
+            ws.onerror = (error) => {
+                addLog(`Connection error: ${error.message || 'Unknown error'}`, 'error');
+            };
+        }
+
+        function handleMessage(message) {
+            switch (message.type) {
+                case 'welcome':
+                    addLog(`Welcome! Client ID: ${message.clientId}`, 'success');
+                    break;
+                    
+                case 'broadcast':
+                case 'server_broadcast':
+                    addLog(`📢 ${message.message || message.content}`);
+                    break;
+                    
+                case 'notification':
+                    addLog(`🔔 ${message.message}`, message.notificationType === 'error' ? 'error' : '');
+                    break;
+                    
+                case 'client_connected':
+                    updateClientCount(message.totalClients);
+                    addLog(`Client connected (Total: ${message.totalClients})`);
+                    break;
+                    
+                case 'client_disconnected':
+                    updateClientCount(message.totalClients);
+                    addLog(`Client disconnected (Total: ${message.totalClients})`);
+                    break;
+                    
+                default:
+                    addLog(`${message.type}: ${JSON.stringify(message, null, 2)}`);
+            }
+        }
+
+        function updateStatus(status) {
+            const statusEl = document.getElementById('status');
+            const serverStatusEl = document.getElementById('serverStatus');
+            
+            statusEl.className = `status ${status}`;
+            statusEl.textContent = status === 'online' ? 'Online' : 'Offline';
+            
+            serverStatusEl.textContent = status === 'online' ? '●' : '○';
+            serverStatusEl.style.color = status === 'online' ? '#51cf66' : '#ff6b6b';
+        }
+
+        function updateClientCount(count) {
+            document.getElementById('clientCount').textContent = count || '-';
+        }
+
+        function addLog(message, type = '') {
+            const logEl = document.getElementById('activityLog');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            
+            logEl.appendChild(entry);
+            logEl.scrollTop = logEl.scrollHeight;
+            
+            // Keep only last 50 entries
+            while (logEl.children.length > 50) {
+                logEl.removeChild(logEl.firstChild);
+            }
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (message && isConnected) {
+                ws.send(JSON.stringify({
+                    type: 'broadcast',
+                    content: `📱 ${message}`
+                }));
+                
+                input.value = '';
+                addLog(`Sent: ${message}`, 'success');
+            }
+        }
+
+        function sendCommand(command) {
+            if (!isConnected) {
+                addLog('Not connected to server', 'error');
+                return;
+            }
+            
+            addLog(`Executing command: ${command}`, 'success');
+            
+            switch (command) {
+                case 'restart':
+                    ws.send(JSON.stringify({
+                        type: 'broadcast',
+                        content: '🔄 System restart requested from mobile'
+                    }));
+                    break;
+                    
+                case 'health-check':
+                    ws.send(JSON.stringify({
+                        type: 'query',
+                        query: 'SELECT COUNT(*) as health_check FROM sqlite_master'
+                    }));
+                    break;
+                    
+                case 'update':
+                    ws.send(JSON.stringify({
+                        type: 'broadcast',
+                        content: '⬆️ System update requested from mobile'
+                    }));
+                    break;
+                    
+                default:
+                    addLog(`Unknown command: ${command}`, 'error');
+            }
+        }
+
+        function refreshStatus() {
+            if (isConnected) {
+                // Request server status
+                fetch(getServerUrl().replace('ws://', 'http://').replace('ws', 'http') + '/status')
+                    .then(response => response.json())
+                    .then(data => {
+                        updateClientCount(data.clients);
+                        document.getElementById('uptime').textContent = 
+                            Math.floor(data.uptime / 60) + 'm';
+                        addLog('Status updated', 'success');
+                    })
+                    .catch(error => {
+                        addLog(`Status update failed: ${error.message}`, 'error');
+                    });
+            }
+        }
+
+        function handleEnter(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        // Auto-refresh status every 30 seconds
+        setInterval(() => {
+            if (isConnected) {
+                refreshStatus();
+            }
+        }, 30000);
+
+        // Initialize connection
+        connect();
+
+        // Add to home screen prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            setTimeout(() => {
+                if (confirm('Add Claude Buddy to your home screen for quick access?')) {
+                    deferredPrompt.prompt();
+                }
+            }, 10000);
+        });
+    </script>
+</body>
+</html>

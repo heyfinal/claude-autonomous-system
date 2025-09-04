@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.daniel.claude-updater</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/daniel/.claude/auto-updater.sh</string>
+    </array>
+    
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/daniel/.claude/updater.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/daniel/.claude/updater-error.log</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin:/Users/daniel/.local/bin</string>
+        <key>HOME</key>
+        <string>/Users/daniel</string>
+    </dict>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/daniel</string>
+    
+    <key>ProcessType</key>
+    <string>Background</string>
+    
+    <key>LowPriorityIO</key>
+    <true/>
+    
+    <key>Nice</key>
+    <integer>10</integer>
+</dict>
+</plist>

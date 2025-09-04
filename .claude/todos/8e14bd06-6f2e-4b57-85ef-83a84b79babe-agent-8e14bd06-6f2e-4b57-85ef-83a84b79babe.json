@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Create Python job finder script that integrates with meta-job-finder agent",
+    "status": "completed"
+  },
+  {
+    "content": "Build HTML template for job results display",
+    "status": "completed"
+  },
+  {
+    "content": "Create configuration file for job search parameters",
+    "status": "completed"
+  },
+  {
+    "content": "Set up launchd plist for 6am daily execution on macOS",
+    "status": "completed"
+  },
+  {
+    "content": "Use meta-ai-agent for code review and testing",
+    "status": "in_progress"
+  },
+  {
+    "content": "Push final system to GitHub",
+    "status": "pending"
+  }
+]

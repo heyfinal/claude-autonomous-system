@@ -1,0 +1,1135 @@
+[2025-09-04 12:15:32] === Claude Startup Script Initiated ===
+[2025-09-04 12:15:32] Updating MCP server packages...
+
+changed 1 package in 4s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+added 2 packages, and changed 87 packages in 2m
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:18:17] ✓ MCP server packages updated
+[2025-09-04 12:18:17] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:18:17] Checking Claude Buddy dependencies...
+[2025-09-04 12:18:21] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:18:21] === Claude Startup Script Initiated ===
+[2025-09-04 12:18:21] Stale PID file found, removing...
+[2025-09-04 12:18:21] Updating MCP server packages...
+
+changed 1 package in 2s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 1s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 1s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:18:46] ✓ MCP server packages updated
+[2025-09-04 12:18:46] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:18:46] Checking Claude Buddy dependencies...
+[2025-09-04 12:18:50] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:18:50] === Claude Startup Script Initiated ===
+[2025-09-04 12:18:50] Stale PID file found, removing...
+[2025-09-04 12:18:50] Updating MCP server packages...
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 1s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:19:22] ✓ MCP server packages updated
+[2025-09-04 12:19:22] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:19:22] Checking Claude Buddy dependencies...
+[2025-09-04 12:19:26] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:19:26] === Claude Startup Script Initiated ===
+[2025-09-04 12:19:26] Stale PID file found, removing...
+[2025-09-04 12:19:26] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 1s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:19:58] ✓ MCP server packages updated
+[2025-09-04 12:19:58] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:19:58] Checking Claude Buddy dependencies...
+[2025-09-04 12:20:03] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:20:03] === Claude Startup Script Initiated ===
+[2025-09-04 12:20:03] Stale PID file found, removing...
+[2025-09-04 12:20:03] Updating MCP server packages...
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 5s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:20:42] ✓ MCP server packages updated
+[2025-09-04 12:20:42] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:20:42] Checking Claude Buddy dependencies...
+[2025-09-04 12:20:46] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:20:46] === Claude Startup Script Initiated ===
+[2025-09-04 12:20:46] Stale PID file found, removing...
+[2025-09-04 12:20:46] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:21:26] ✓ MCP server packages updated
+[2025-09-04 12:21:26] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:21:26] Checking Claude Buddy dependencies...
+[2025-09-04 12:21:30] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:21:30] === Claude Startup Script Initiated ===
+[2025-09-04 12:21:30] Stale PID file found, removing...
+[2025-09-04 12:21:30] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:22:08] ✓ MCP server packages updated
+[2025-09-04 12:22:08] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:22:08] Checking Claude Buddy dependencies...
+[2025-09-04 12:22:13] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:22:13] === Claude Startup Script Initiated ===
+[2025-09-04 12:22:13] Stale PID file found, removing...
+[2025-09-04 12:22:13] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:22:51] ✓ MCP server packages updated
+[2025-09-04 12:22:51] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:22:51] Checking Claude Buddy dependencies...
+[2025-09-04 12:22:55] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:22:55] === Claude Startup Script Initiated ===
+[2025-09-04 12:22:55] Stale PID file found, removing...
+[2025-09-04 12:22:55] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:23:31] ✓ MCP server packages updated
+[2025-09-04 12:23:31] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:23:31] Checking Claude Buddy dependencies...
+[2025-09-04 12:23:35] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:23:35] === Claude Startup Script Initiated ===
+[2025-09-04 12:23:35] Stale PID file found, removing...
+[2025-09-04 12:23:35] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:24:12] ✓ MCP server packages updated
+[2025-09-04 12:24:12] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:24:12] Checking Claude Buddy dependencies...
+[2025-09-04 12:24:17] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:24:17] === Claude Startup Script Initiated ===
+[2025-09-04 12:24:17] Stale PID file found, removing...
+[2025-09-04 12:24:17] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:24:54] ✓ MCP server packages updated
+[2025-09-04 12:24:54] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:24:54] Checking Claude Buddy dependencies...
+[2025-09-04 12:24:58] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:24:58] === Claude Startup Script Initiated ===
+[2025-09-04 12:24:58] Stale PID file found, removing...
+[2025-09-04 12:24:58] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:25:42] ✓ MCP server packages updated
+[2025-09-04 12:25:42] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:25:42] Checking Claude Buddy dependencies...
+[2025-09-04 12:25:46] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:25:46] === Claude Startup Script Initiated ===
+[2025-09-04 12:25:46] Stale PID file found, removing...
+[2025-09-04 12:25:46] Updating MCP server packages...
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:26:30] ✓ MCP server packages updated
+[2025-09-04 12:26:30] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:26:30] Checking Claude Buddy dependencies...
+[2025-09-04 12:26:35] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:26:35] === Claude Startup Script Initiated ===
+[2025-09-04 12:26:35] Stale PID file found, removing...
+[2025-09-04 12:26:35] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:27:13] ✓ MCP server packages updated
+[2025-09-04 12:27:13] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:27:13] Checking Claude Buddy dependencies...
+[2025-09-04 12:27:18] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:27:18] === Claude Startup Script Initiated ===
+[2025-09-04 12:27:18] Stale PID file found, removing...
+[2025-09-04 12:27:18] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:27:58] ✓ MCP server packages updated
+[2025-09-04 12:27:58] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:27:58] Checking Claude Buddy dependencies...
+[2025-09-04 12:28:02] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:28:02] === Claude Startup Script Initiated ===
+[2025-09-04 12:28:02] Stale PID file found, removing...
+[2025-09-04 12:28:02] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+102 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:28:42] ✓ MCP server packages updated
+[2025-09-04 12:28:42] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:28:42] Checking Claude Buddy dependencies...
+[2025-09-04 12:28:46] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:28:46] === Claude Startup Script Initiated ===
+[2025-09-04 12:28:46] Stale PID file found, removing...
+[2025-09-04 12:28:46] Updating MCP server packages...
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 4s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+mcp-server-sqlite is already at latest version 2025.4.25 (location:
+/Users/daniel/.local/pipx/venvs/mcp-server-sqlite)
+[2025-09-04 12:29:25] ✓ MCP server packages updated
+[2025-09-04 12:29:25] Starting Claude Buddy WebSocket server...
+[2025-09-04 12:29:25] Checking Claude Buddy dependencies...
+[2025-09-04 12:29:29] ERROR: Failed to start Claude Buddy server
+[2025-09-04 12:29:29] === Claude Startup Script Initiated ===
+[2025-09-04 12:29:29] Stale PID file found, removing...
+[2025-09-04 12:29:29] Updating MCP server packages...
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+up to date in 2s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+changed 1 package in 3s
+
+102 packages are looking for funding
+  run `npm fund` for details

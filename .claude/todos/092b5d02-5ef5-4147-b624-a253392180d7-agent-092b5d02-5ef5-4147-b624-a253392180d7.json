@@ -1,0 +1,90 @@
+[
+  {
+    "content": "Create autoinstall.yaml configuration for touchless Ubuntu installation",
+    "status": "completed"
+  },
+  {
+    "content": "Create cloud-config.yaml for post-installation service setup",
+    "status": "completed"
+  },
+  {
+    "content": "Create storage configuration with drive formatting",
+    "status": "completed"
+  },
+  {
+    "content": "Create network configuration for hidden SSID",
+    "status": "completed"
+  },
+  {
+    "content": "Create Nextcloud installation automation",
+    "status": "completed"
+  },
+  {
+    "content": "Create Time Machine server setup",
+    "status": "completed"
+  },
+  {
+    "content": "Create management UI installation (CasaOS + Cockpit)",
+    "status": "completed"
+  },
+  {
+    "content": "Create modern ISO creation script with xorriso",
+    "status": "completed"
+  },
+  {
+    "content": "Create USB detection and formatting script",
+    "status": "completed"
+  },
+  {
+    "content": "GitHub backup created - ready for full implementation",
+    "status": "completed"
+  },
+  {
+    "content": "Commit complete system to GitHub",
+    "status": "completed"
+  },
+  {
+    "content": "Install ISO building prerequisites",
+    "status": "completed"
+  },
+  {
+    "content": "Fix ISO builder boot structure for Ubuntu 24.04",
+    "status": "completed"
+  },
+  {
+    "content": "miniCLOUD touchless ISO built successfully",
+    "status": "completed"
+  },
+  {
+    "content": "USB drive detected at /dev/disk4",
+    "status": "completed"
+  },
+  {
+    "content": "Fix USB creation for Mac Mini EFI boot recognition",
+    "status": "completed"
+  },
+  {
+    "content": "Mac-compatible USB successfully created with GUID partition map",
+    "status": "completed"
+  },
+  {
+    "content": "Rebuild ISO with proper Mac EFI hybrid boot support",
+    "status": "completed"
+  },
+  {
+    "content": "Working Etcher-compatible ISO ready for deployment",
+    "status": "completed"
+  },
+  {
+    "content": "Updated network config for eno0 Ethernet bonding with WiFi backup",
+    "status": "completed"
+  },
+  {
+    "content": "miniCLOUD deployed and online at 192.168.1.93",
+    "status": "completed"
+  },
+  {
+    "content": "Enable SSH password auth and install Mac Mini drivers",
+    "status": "in_progress"
+  }
+]

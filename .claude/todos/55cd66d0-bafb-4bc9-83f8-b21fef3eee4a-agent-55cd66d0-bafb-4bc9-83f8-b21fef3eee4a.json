@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Create manual extraction instructions (fastest method)",
+    "status": "completed"
+  },
+  {
+    "content": "User performs manual email extraction via Smart Mailboxes",
+    "status": "pending"
+  },
+  {
+    "content": "Create court-ready analysis of extracted emails",
+    "status": "pending"
+  },
+  {
+    "content": "Generate legal evidence package with proper formatting",
+    "status": "pending"
+  },
+  {
+    "content": "Organize final evidence by priority and date",
+    "status": "pending"
+  }
+]

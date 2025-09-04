@@ -1,0 +1,46 @@
+#!/bin/bash
+# Simple Claude Buddy Control
+# Quick commands for managing the system
+
+alias cb-status='/Users/daniel/.claude/manage.sh status'
+alias cb-start='/Users/daniel/.claude/manage.sh start'
+alias cb-stop='/Users/daniel/.claude/manage.sh stop' 
+alias cb-restart='/Users/daniel/.claude/manage.sh restart'
+alias cb-logs='/Users/daniel/.claude/manage.sh logs'
+alias cb-update='/Users/daniel/.claude/manage.sh update'
+alias cb-test='/Users/daniel/.claude/manage.sh test'
+
+# Add to PATH
+export PATH="/Users/daniel/.claude:$PATH"
+
+# Quick status check function
+cb() {
+    case "${1:-status}" in
+        "st"|"status") /Users/daniel/.claude/manage.sh status ;;
+        "start") /Users/daniel/.claude/manage.sh start ;;
+        "stop") /Users/daniel/.claude/manage.sh stop ;;
+        "restart"|"r") /Users/daniel/.claude/manage.sh restart ;;
+        "up"|"update") /Users/daniel/.claude/manage.sh update ;;
+        "test"|"t") /Users/daniel/.claude/manage.sh test ;;
+        "logs"|"l") /Users/daniel/.claude/manage.sh logs "${2:-startup}" ;;
+        "server") 
+            echo "=== Direct Server Control ==="
+            case "$2" in 
+                "start") cd /Users/daniel/claude-buddy && node server.js & ;;
+                "stop") pkill -f "server.js" ;;
+                "status") curl -s "http://localhost:8080/status" | jq '.' || echo "Server not responding" ;;
+                *) echo "Usage: cb server {start|stop|status}" ;;
+            esac
+            ;;
+        "mcp") 
+            echo "=== MCP Server Status ==="
+            claude-code mcp list | head -15
+            ;;
+        *) 
+            echo "Claude Buddy Quick Control"
+            echo "Usage: cb {status|start|stop|restart|update|test|logs|server|mcp}"
+            ;;
+    esac
+}
+
+echo "Claude Buddy aliases loaded! Use 'cb' command for quick control."

@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Fix Info.plist to enable menu bar icon visibility",
+    "status": "completed"
+  },
+  {
+    "content": "Rebuild application with correct configuration",
+    "status": "in_progress"
+  },
+  {
+    "content": "Launch and verify menu bar icon appears",
+    "status": "pending"
+  }
+]

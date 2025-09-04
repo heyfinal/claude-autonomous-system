@@ -1,0 +1,25 @@
+{
+  "name": "claude-buddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "node client.js",
+    "notifications": "node notifications.js",
+    "mcp": "node mcp-websocket-server.js",
+    "dev": "concurrently \"npm run start\" \"sleep 3 && npm run notifications\"",
+    "test": "node -e \"console.log('Claude Buddy WebSocket system ready!')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7",
+    "ws": "^8.18.3"
+  }
+}

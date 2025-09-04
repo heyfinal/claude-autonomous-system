@@ -1,0 +1,30 @@
+{
+  "USE_BUILTIN_RIPGREP": false,
+  "ripgrepPath": "/opt/homebrew/bin/rg",
+  "searchOptions": {
+    "useRipgrep": true,
+    "ripgrepArgs": [
+      "--smart-case",
+      "--hidden",
+      "--follow",
+      "--glob=!.git/*",
+      "--glob=!node_modules/*",
+      "--glob=!*.pyc",
+      "--glob=!__pycache__/*"
+    ]
+  },
+  "performance": {
+    "preferSystemTools": true,
+    "parallelSearch": true,
+    "maxSearchThreads": 8
+  },
+  "hooks": {
+    "preSession": "/Users/daniel/.claude/hooks.sh pre",
+    "postSession": "/Users/daniel/.claude/hooks.sh post"
+  },
+  "autoStart": {
+    "claudeBuddy": true,
+    "mcpServers": true,
+    "healthMonitor": true
+  }
+}
