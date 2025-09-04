@@ -1,5 +1,20 @@
 # CLAUDE.md - Development Standards & Best Practices
 
+## CRITICAL RULE - NO PLACEHOLDER CODE
+
+### ⚠️ ABSOLUTE REQUIREMENT - NO EXCEPTIONS
+
+- **NEVER** use placeholder code (example.com, mock data, demo values)
+- **NEVER** use dummy/fake API keys, URLs, or credentials  
+- **NEVER** create non-functional example code unless explicitly requested
+- **ALWAYS** use real, working implementations with actual values
+- **ALWAYS** ask for real credentials/URLs when needed for functionality
+- **EXCEPTION**: Only use placeholders when user explicitly requests examples/demos
+
+**This applies to ALL Claude Code instances and cannot be overridden.**
+
+---
+
 ## CORE IMPROVEMENTS IMPLEMENTED
 
 ### 1. SwiftAI Library Integration (2025)
@@ -99,7 +114,7 @@ if not os.path.exists(path):
 # Query databases with natural language
 "Find all users in the SQLite database who signed up last week"
 
-# Web automation
+# Web automation  
 "Use browserbase to fill out the QuickBooks payroll form with employee data"
 
 # GitHub integration  
@@ -182,7 +197,8 @@ if !AXIsProcessTrusted() {
 - [ ] Error handling implemented
 - [ ] Fallback strategies in place
 - [ ] Tested on target platform
+- [ ] **NO PLACEHOLDER CODE** - all values must be real and functional
 
 ---
-Last Updated: 2025-08-31
+Last Updated: 2025-09-04
 Next Update: When new patterns or solutions are discovered
