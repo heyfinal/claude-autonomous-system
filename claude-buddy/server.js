@@ -10,6 +10,7 @@ const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
 const http = require('http');
 const path = require('path');
+const fs = require('fs');
 
 // Initialize Express app
 const app = express();
@@ -161,6 +162,14 @@ wss.on('connection', (ws, req) => {
           }
           break;
           
+        case 'run_ai_analysis':
+          runAIAnalysis(ws, data.projectPath || process.cwd());
+          break;
+          
+        case 'get_analysis_results':
+          getAnalysisResults(ws);
+          break;
+          
         default:
           // Echo unknown messages with metadata
           ws.send(JSON.stringify({
@@ -236,6 +245,67 @@ function handleClaudeRequest(ws, data) {
   }, 1000);
 }
 
+// Run AI analysis on project
+function runAIAnalysis(ws, projectPath) {
+  ws.send(JSON.stringify({
+    type: 'analysis_started',
+    message: 'Starting AI code analysis...',
+    timestamp: new Date().toISOString()
+  }));
+  
+  const { execSync } = require('child_process');
+  
+  try {
+    // Change to the autonomous system directory and run analysis
+    const analysisPath = '/Users/daniel/claude-autonomous-system';
+    const command = `cd "${analysisPath}" && node ai-analysis.js`;
+    
+    execSync(command, { 
+      cwd: projectPath,
+      timeout: 30000 // 30 second timeout
+    });
+    
+    // Try to read the results
+    getAnalysisResults(ws);
+    
+  } catch (error) {
+    ws.send(JSON.stringify({
+      type: 'analysis_error',
+      error: error.message,
+      timestamp: new Date().toISOString()
+    }));
+  }
+}
+
+// Get latest AI analysis results
+function getAnalysisResults(ws) {
+  try {
+    const resultsFile = '/Users/daniel/claude-autonomous-system/ai-analysis-results.json';
+    
+    if (fs.existsSync(resultsFile)) {
+      const results = JSON.parse(fs.readFileSync(resultsFile, 'utf8'));
+      
+      ws.send(JSON.stringify({
+        type: 'analysis_results',
+        data: results,
+        timestamp: new Date().toISOString()
+      }));
+    } else {
+      ws.send(JSON.stringify({
+        type: 'analysis_not_found',
+        message: 'No analysis results found. Run analysis first.',
+        timestamp: new Date().toISOString()
+      }));
+    }
+  } catch (error) {
+    ws.send(JSON.stringify({
+      type: 'analysis_error',
+      error: error.message,
+      timestamp: new Date().toISOString()
+    }));
+  }
+}
+
 // REST API endpoints
 app.get('/status', (req, res) => {
   res.json({
@@ -284,6 +354,41 @@ app.post('/broadcast', (req, res) => {
     timestamp: new Date().toISOString()
   });
   res.json({ success: true, clientsNotified: clients.size });
+});
+
+// AI Analysis endpoints
+app.get('/analysis', (req, res) => {
+  try {
+    const resultsFile = '/Users/daniel/claude-autonomous-system/ai-analysis-results.json';
+    
+    if (fs.existsSync(resultsFile)) {
+      const results = JSON.parse(fs.readFileSync(resultsFile, 'utf8'));
+      res.json(results);
+    } else {
+      res.status(404).json({ error: 'No analysis results found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/analysis/run', (req, res) => {
+  const { execSync } = require('child_process');
+  
+  try {
+    const analysisPath = '/Users/daniel/claude-autonomous-system';
+    const command = `cd "${analysisPath}" && node ai-analysis.js`;
+    
+    execSync(command, { timeout: 30000 });
+    
+    res.json({ 
+      success: true, 
+      message: 'Analysis completed',
+      timestamp: new Date().toISOString() 
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 // Start server
